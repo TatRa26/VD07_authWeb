@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Профиль{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Профиль</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{ form.name.label(class="form-label") }} {{ form.name(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.email.label(class="form-label") }} {{ form.email(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.password.label(class="form-label") }} {{ form.password(class="form-control") }}
+        </div>
+        <button type="submit" class="btn btn-primary">Обновить профиль</button>
+    </form>
+</div>
+{% endblock %}
+

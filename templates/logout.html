@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Выход{% endblock %}
+
+{% block content %}
+<div class="container text-center">
+    <h2>Вы вышли из системы</h2>
+    <p>Спасибо за визит! Вы можете <a href="{{ url_for('login') }}">войти снова</a> или вернуться на <a href="{{ url_for('welcome') }}">главную страницу</a>.</p>
+</div>
+{% endblock %}
+
